@@ -1,0 +1,30 @@
+.table-container{
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 1%;
+    width: fit-content;
+    /* padding: 2%; */
+}
+
+
+.responsive-users-table{
+    overflow-x:auto;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){
+    background-color: #FDE047;
+}
+
+  tr:nth-child(odd){
+    background-color: #FDE68A;
+}
+
+th{
+    background-color: #7C2D12;
+    color: rgb(255, 255, 255);
+}

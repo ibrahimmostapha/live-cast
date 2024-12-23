@@ -1,0 +1,78 @@
+.add-new-channel-container {
+    margin: 1%;
+}
+
+.add-new-channel-inputs {
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    background-color: #FDE68A;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.flex-css {
+    flex: 30%;
+    height: auto;
+    margin: 5px;
+}
+
+.inputs-top-side {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+.inputs-button-side {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+.add-channel-btn {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-channel-btn button {
+    height: 35px;
+    outline: 0;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #7C2D12;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.5s;
+    letter-spacing: 2px;
+    width: 100%;
+    ;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Channel Logo';
+    display: inline-block;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 2px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.custom-file-input:hover::before {
+    border-color: black;
+}
+
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}

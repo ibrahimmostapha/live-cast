@@ -1,0 +1,8 @@
+.kabse {
+    display: block;
+    padding: 12px;
+    cursor: pointer
+}
+.kabse span{
+    margin: 0 10px;
+}

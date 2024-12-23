@@ -1,0 +1,127 @@
+.edit-profile-body-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+.card-edit-profile {
+    flex: 60%;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    background-color: #FDE68A;
+}
+
+.subscribe-box {
+    flex: 30%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+    /* box-shadow:0 15px 30px rgba(0,0,0,0.1); */
+    text-align: center;
+    margin: auto;
+}
+
+.card-left-side{
+    flex: 50%;
+}
+
+.card-right-side{
+    flex: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.fa{
+    position:absolute;
+    top:10px;
+    left:8px;
+    color:#70747C;
+}
+
+.edit_btn{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 50%;
+}
+
+.edit_btn button {
+    height:35px;
+    outline:0;
+    border:none;
+    color:#fff;
+    border-radius:10px;
+    background-color:#d6ba2c;
+    font-size:13px;
+    cursor:pointer;
+    transition:all 0.5s;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.edit_btn button:hover{
+    background-color:#FDE047;
+}
+
+.done_edit_btn{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 50%;
+}
+
+.done_edit_btn button {
+    height:35px;
+    outline:0;
+    border:none;
+    color:#fff;
+    border-radius:10px;
+    background-color:#22be14;
+    font-size:13px;
+    cursor:pointer;
+    transition:all 0.5s;
+    letter-spacing: 2px;
+    width: 100%;;
+}
+
+.done_edit_btn button:hover{
+    background-color:#55d14a;
+}
+
+.dlt-btn{
+    height:35px;
+    outline:0;
+    border:none;
+    width:180px;
+    color:#fff;
+    border-radius:10px;
+    background-color:#F20E0E;
+    font-size:13px;
+    cursor:pointer;
+    transition:all 0.5s;
+    letter-spacing: 2px;
+    margin-top:20px;
+}
+
+.dlt-btn:hover{
+    background-color:#f53b3b;
+}
+
+.edit-profile-form{
+    margin-top: 20px;
+}
+
+.subscribe{
+    text-decoration:none;
+    color:#072DF5;
+    margin-top:30px;
+    text-align:center;
+    font-size: large;
+    font-weight:700;
+}

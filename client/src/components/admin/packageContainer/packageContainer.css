@@ -1,0 +1,43 @@
+.all-packages-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.package-background{
+    width: 252px;
+    height: 375px;
+}
+.package-container {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    width: 22%;
+    border-radius: 10px;
+    margin: 1%;
+    background-color: #FDE047;
+}
+
+.package-name {
+    text-align: center;
+}
+
+.package-info {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 2%;
+    width: 90%;
+    margin: auto;
+}
+
+.price {
+    color: grey;
+    font-size: 18px;
+    text-align: center;
+}
+
+.package-buttons{
+    text-align: center;
+}
+
+.package-buttons button{
+    margin: 1% 3%;
+}

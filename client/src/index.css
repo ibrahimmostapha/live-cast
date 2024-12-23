@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family:'monospace' !important;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    width:100%;
+    min-height:100%;
+
+    box-sizing: border-box;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  body{
+    font-family: monospace !important;
+    overflow: auto;
+    font-size: 16px;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }
+
+@media (max-width:639px) {
+  #main_search{
+    display:none;
+  }
+  
+  .navBar::before{
+   display:none; 
+  }
+}
+
+.height-80{
+  height:100vh;
+}
+
+@layer components{
+  .tooltip{
+    @apply absolute w-auto p-2 min-w-max right-0 top-8 rounded-md shadow-md 
+      text-white dark:text-black bg-stone-800 dark:bg-white
+      text-sm font-bold transition-all duration-100 scale-0 origin-top
+  }
+  .foobarfoo{
+    @apply w-14 h-4 border-2 border-white flex hover:bg-white hover:cursor-pointer transition-colors
+  }
+}
+
+input[type="radio"]{
+  position:absolute;
+  visibility: hidden;
+}
+
+.r1-checked{
+  margin-left: 0;
+  transition: 0.6ms ease-in-out;
+}
+.r2-checked{
+  margin-left: -20%;
+  transition: 0.6ms ease-in-out;
+}
+.r3-checked{
+  margin-left: -40%;
+  transition: 0.6ms ease-in-out;
+}
+.r4-checked{
+  margin-left: -60%;
+  transition: 0.6ms ease-in-out;
+}
+.r5-checked{
+  margin-left: -80%;
+  transition: 0.6ms ease-in-out;
+}

@@ -1,0 +1,241 @@
+:root{
+    --brown:#CA8A04;
+    --white: #FDE68A;
+    --dark:#000;
+    --light:rgb(173, 173, 173);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;    
+}
+
+#logo-signin{
+    height: 100vh;
+    aspect-ratio: 1/1;
+    position:absolute;
+    right:0;
+    overflow:unset;
+}
+
+#profile-footer{
+    width:100%;
+    height:80px;
+    background-color: var(var(--white));
+    position:fixed;
+    bottom:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#profile-footer-links a{
+    margin-left:10px;
+    color:var(--dark);
+}
+#profile-footer-links a>i:hover{
+    scale:1.3;
+    color:var(--white);
+    transition: 0.2s;
+}
+
+.sign-in-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background-image: linear-gradient(to right top,var(--brown),#d3ae09)
+}
+
+.sign-in-container .card{
+    height:420px;
+    width:800px;
+    background-color:var(--white);
+    position:relative;
+    border-radius: 10px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    margin-right:30%;
+    display:flex;
+}
+
+.sign-in-container .card .left-side{
+    width:50%;
+    background-color:var(--white);
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    border-radius: 10px 0 0 10px;
+}
+
+.left-side span:nth-child(1){
+    position:absolute;
+    transform:rotate(45deg);
+    top:70px;
+    left:-100px;
+    display:flex;
+    height:180px;
+    width:400px;
+    border-top-right-radius:150px;
+    border-bottom-right-radius:150px;
+    border:15px solid #CA8A04;
+    background-image: linear-gradient(to right,#FDE047,var(--brown))
+}
+
+.left-side span:nth-child(2){
+    position:absolute;
+    transform:rotate(45deg);
+    top:-20px;
+    left:130px;
+    display:flex;
+    height:100px;
+    width:200px;
+    border-top-right-radius:150px;
+    border-bottom-right-radius:150px;
+    background-image: linear-gradient(to right,var(--brown),#FDE047);
+}
+
+.left-side span:nth-child(3){
+    position:absolute;
+    transform:rotate(45deg);
+    top:280px;
+    left:-70px;
+    display:flex;
+    height:100px;
+    width:200px;
+    border-top-right-radius:150px;
+    border-bottom-right-radius:150px;
+    background-image: linear-gradient(to right,var(--brown),#FDE047)
+}
+
+.left-side span:nth-child(4){
+    position:absolute;
+    transform:rotate(-135deg);
+    top:370px;
+    left:170px;
+    display:flex;
+    height:100px;
+    width:200px;
+    border-top-right-radius:150px;
+    border-bottom-right-radius:150px;
+    background-image: linear-gradient(to right,#cfc20f,var(--brown))
+}
+
+.sign-in-container .card .right-side{
+    width:50%;
+    background-color:var(--white);
+    height:100%;
+    padding:20px;
+    border-radius:10px;
+}
+
+.login{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    width:100%;
+    margin-bottom: 25px;
+}
+
+.input_text{
+    margin-top:10px;
+    width:100%;
+    position:relative
+}
+
+input, select{
+    height:35px;
+    width:100%;
+    border:none;
+    background-color:#F6F6F6;
+    outline:0;
+    padding:5px 10px;
+    padding-left:25px;
+    border-radius:5px;
+}
+
+.fa{
+    position:absolute;
+    top:10px;
+    left:8px;
+    color:#70747C;
+}
+
+.fa-eye, .fa-eye-slash{
+    left:auto !important;
+    right:8px !important;
+    cursor: pointer;
+}
+
+.login_btn{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+.login_btn button{
+    height:45px;
+    outline:0;
+    border:none;
+    width:100%;
+    color:#fff;
+    border-radius:10px;
+    background-color:var(--brown);
+    cursor:pointer;
+    transition:all 0.5s;
+    letter-spacing: 2px;
+}
+
+.login_btn button:hover{
+    background-color:#d6ba2c;
+}
+
+.create{
+    margin-top:70px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:700
+}
+
+.margin{
+    margin-top:67px !important
+}
+    
+.create a{
+    text-decoration:none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+@media (max-width:750px){
+    .sign-in-container{align-items: center;}
+
+    #logo-signin{display:none}
+
+    .card{margin:0 !important; width:90% !important}
+
+    .sign-in-container .card{max-width: 350px}
+    
+    .sign-in-container .card .right-side{width:100%}
+    
+    .sign-in-container .card .left-side{display: none}
+
+    .margin{margin-top:20px !important}
+
+}
+
+@media (max-width:450px){
+    .input_text{margin-top:10px;}
+
+    .create{
+        margin-top: 5px;
+    }
+}
+

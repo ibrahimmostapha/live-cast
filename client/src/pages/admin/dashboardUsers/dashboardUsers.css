@@ -1,0 +1,11 @@
+.search-from-users-list{
+    display: flex;
+}
+
+.search-from-users-list-left-side{
+    flex: 50%;
+}
+
+.search-from-users-list-right-side{
+    flex: 50%;
+}
